@@ -6,19 +6,10 @@
     <description>Recent content in Posts on Vi Valdi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wbira.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Test post</title>
-      <link>https://wbira.github.io/posts/test-post/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://wbira.github.io/posts/test-post/</guid>
-      <description>Test post Another test</description>
-    </item>
     
     <item>
       <title>Welcome!</title>
