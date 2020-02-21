@@ -35,9 +35,8 @@
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://wbira.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache License 2.0. Hugo supports TOML, YAML, and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- Blackfriday Chroma Smartcrop Cobra Viper  Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.</description>
+      <description>Hello My name is Waldemar Bira, I live in Poland, and I’m a Software Engineer that is passionate about AWS. Currently I&amp;rsquo;m work in Ryanair Labs in their Wrocław office, and on my daily basis I&amp;rsquo;m working on project in serverless architecture written in Go.
+In my spear time I&amp;rsquo;m preparing for triathlon competitions. In this year my goal is to complete Half Ironman distance. I also like hiking and from time to time I brew beer in my home :)</description>
     </item>
     
   </channel>
