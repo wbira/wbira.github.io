@@ -187,7 +187,7 @@ To set ProvisionedConcurrencyConfig AutoPublishALias must be defined on the <spa
 tool to test function latency. Parameter <code>n</code> define number of request to perform.
 Parameter <code>c</code> define number of multiple request perform at a time.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ab -n <span style="color:#ae81ff">1000</span> -c <span style="color:#ae81ff">10</span>
-</code></pre></div><p>You can run this function on two lambdas one with enabled provisioned concurrency, and on with disabled.
+</code></pre></div><p>You can run this function on two lambdas one with enabled provisioned concurrency, and the second with disabled provisioned concurrency.
 <a href="https://aws.amazon.com/blogs/aws/new-provisioned-concurrency-for-lambda-functions/">On AWS blog</a> you could check results of similar experiment.
 Also you could <a href="https://github.com/wbira/reinvent2019launches/tree/master/lambda.provisioned.concurrency">run example</a> that I created on my github account.</p>
 
