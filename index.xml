@@ -6,10 +6,19 @@
     <description>Recent content on Vi Valdi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wbira.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lambda provisioned concurrency</title>
+      <link>https://wbira.github.io/posts/lambda-provisioned-concurrency/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wbira.github.io/posts/lambda-provisioned-concurrency/</guid>
+      <description>What is Provisioned Concurrency for AWS Lambda? AWS Lambda as a main building block of serverless world. Overall serverless computing is great for various of use cases, but still have some limitations. One of them could be latency. When lambda wasn&amp;rsquo;t used for some time, an execution environment needs to be created, and it could take from 200ms to even 600ms, depending on choosen language. So when latency is critical for your application, additional 600ms could be painful.</description>
+    </item>
     
     <item>
       <title>Welcome!</title>
