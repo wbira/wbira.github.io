@@ -17,9 +17,8 @@
       <pubDate>Thu, 26 Mar 2020 21:17:49 +0100</pubDate>
       
       <guid>https://wbira.github.io/posts/http-pooling/</guid>
-      <description>HTTP polling in RxJs Hello! Today post will be a quick one. I&amp;rsquo;ll show you small utility, that I created for testing HTTP long-polling based API.
-Testing such APIs via curl or Postman can by really annoying. I have some frontend background, so I thought that RxJs can solve my problem in few lines, in nice declarative way.
-import { catchError, map, pluck, tap, mergeMap, take, delay, filter, scan } from &amp;#39;rxjs/operators&amp;#39;; const ERROR_MSG = &amp;#34;Could not fetch data.</description>
+      <description>&lt;h3 id=&#34;http-polling-in-rxjs&#34;&gt;HTTP polling in RxJs&lt;/h3&gt;
+&lt;p&gt;Hello! Today post will be a quick one. I&amp;rsquo;ll show you small utility, that I created for testing HTTP long-polling based API.&lt;/p&gt;</description>
     </item>
     
     <item>
