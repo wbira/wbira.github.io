@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>aws on Vi Valdi</title>
-    <link>https://wbira.github.io/tags/aws/</link>
-    <description>Recent content in aws on Vi Valdi</description>
+    <title>lambda on Vi Valdi</title>
+    <link>https://wbira.github.io/tags/lambda/</link>
+    <description>Recent content in lambda on Vi Valdi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://wbira.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wbira.github.io/tags/lambda/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://wbira.github.io/posts/lambda-provisioned-concurrency/</guid>
       <description>What is Provisioned Concurrency for AWS Lambda? AWS Lambda as a main building block of serverless world. Overall serverless computing is great for various use cases, but still has some limitations. One of them could be latency. When lambda hadn&amp;rsquo;t been used for some time an execution environment needs to be created. It can take from 200ms to even 600ms, depending on chosen language. So when latency is critical for your application, additional 600ms might be painful.</description>
-    </item>
-    
-    <item>
-      <title>Welcome!</title>
-      <link>https://wbira.github.io/posts/my-first-post/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://wbira.github.io/posts/my-first-post/</guid>
-      <description>Here is my new super blog. I will try to share my IT knowladge here.</description>
     </item>
     
   </channel>
