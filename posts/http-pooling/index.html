@@ -132,12 +132,11 @@
 </nav>
         <div id="content" class="content-container">
         
-<h1 class="post-title">Http Polling2</h1>
+<h1 class="post-title">Http Polling</h1>
     <time>March 26, 2020</time>
     <div>
         <p>
-        <h3 id="http-polling-in-rxjs">HTTP polling in RxJs</h3>
-<p>Hello! Today post will be a quick one. I&rsquo;ll show you small utility, that I created for testing HTTP long-polling based API.</p>
+        <p>Hello! Today post will be a quick one. I&rsquo;ll show you small utility, that I created for testing HTTP long-polling based API.</p>
 <p>Testing such APIs via curl or Postman can by really annoying. I have some frontend background, so I thought that RxJs can solve my problem in few lines, in nice declarative way.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">catchError</span>, <span style="color:#a6e22e">map</span>, <span style="color:#a6e22e">pluck</span>, <span style="color:#a6e22e">tap</span>, <span style="color:#a6e22e">mergeMap</span>, <span style="color:#a6e22e">take</span>, <span style="color:#a6e22e">delay</span>, <span style="color:#a6e22e">filter</span>, <span style="color:#a6e22e">scan</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;rxjs/operators&#39;</span>;
 
