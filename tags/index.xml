@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>angular</title>
-      <link>https://wbira.github.io/tags/angular/</link>
-      <pubDate>Thu, 26 Mar 2020 21:17:49 +0100</pubDate>
-      
-      <guid>https://wbira.github.io/tags/angular/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>http</title>
       <link>https://wbira.github.io/tags/http/</link>
       <pubDate>Thu, 26 Mar 2020 21:17:49 +0100</pubDate>
@@ -30,11 +21,20 @@
     </item>
     
     <item>
-      <title>pooling</title>
-      <link>https://wbira.github.io/tags/pooling/</link>
+      <title>polling</title>
+      <link>https://wbira.github.io/tags/polling/</link>
       <pubDate>Thu, 26 Mar 2020 21:17:49 +0100</pubDate>
       
-      <guid>https://wbira.github.io/tags/pooling/</guid>
+      <guid>https://wbira.github.io/tags/polling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RxJs</title>
+      <link>https://wbira.github.io/tags/rxjs/</link>
+      <pubDate>Thu, 26 Mar 2020 21:17:49 +0100</pubDate>
+      
+      <guid>https://wbira.github.io/tags/rxjs/</guid>
       <description></description>
     </item>
     

@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://wbira.github.io/tags/angular/</loc>
-    <lastmod>2020-03-26T21:17:49+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wbira.github.io/tags/http/</loc>
     <lastmod>2020-03-26T21:17:49+01:00</lastmod>
   </url>
@@ -18,12 +13,17 @@
   </url>
   
   <url>
-    <loc>https://wbira.github.io/tags/pooling/</loc>
+    <loc>https://wbira.github.io/tags/polling/</loc>
     <lastmod>2020-03-26T21:17:49+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://wbira.github.io/posts/</loc>
+    <lastmod>2020-03-26T21:17:49+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wbira.github.io/tags/rxjs/</loc>
     <lastmod>2020-03-26T21:17:49+01:00</lastmod>
   </url>
   
