@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Vi Valdi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2020 21:17:49 +0100</lastBuildDate>
     
 	<atom:link href="https://wbira.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Http Pooling</title>
+      <link>https://wbira.github.io/posts/http-pooling/</link>
+      <pubDate>Thu, 26 Mar 2020 21:17:49 +0100</pubDate>
+      
+      <guid>https://wbira.github.io/posts/http-pooling/</guid>
+      <description>HTTP polling in RxJs Hello! Today post will be quick one. I&amp;rsquo;ll show you little utility, that I created for testing HTTP pooled based API. Testing such API&amp;rsquo;s via curl or Postman can by really annoying. I had some frontend background, so I thought that RxJS can solve my problem in a few lines, in nice declarative way.
+import { catchError, map, pluck, tap, mergeMap, take, delay, filter, scan } from &amp;#39;rxjs/operators&amp;#39;; const ERROR_MSG = &amp;#34;Could not fetch data.</description>
+    </item>
     
     <item>
       <title>Lambda provisioned concurrency</title>

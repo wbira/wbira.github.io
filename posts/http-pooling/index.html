@@ -29,8 +29,6 @@
     
  
     
-    <link rel="alternate" type="application/rss+xml" href="https://wbira.github.io/tags/index.xml" title="Vi Valdi" />
-    
     
 </head>
     <body>
@@ -134,25 +132,60 @@
 </nav>
         <div id="content" class="content-container">
         
+<h1 class="post-title">Http Pooling</h1>
+    <time>March 26, 2020</time>
+    <div>
+        <p>
+        <h3 id="http-polling-in-rxjs">HTTP polling in RxJs</h3>
+<p>Hello! Today post will be quick one. I&rsquo;ll show you little utility, that I created for testing HTTP pooled based API.
+Testing such API&rsquo;s via curl or Postman can by really annoying. I had some frontend background, so I thought that RxJS can solve my problem in a few lines, in nice declarative way.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">catchError</span>, <span style="color:#a6e22e">map</span>, <span style="color:#a6e22e">pluck</span>, <span style="color:#a6e22e">tap</span>, <span style="color:#a6e22e">mergeMap</span>, <span style="color:#a6e22e">take</span>, <span style="color:#a6e22e">delay</span>, <span style="color:#a6e22e">filter</span>, <span style="color:#a6e22e">scan</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;rxjs/operators&#39;</span>;
 
-<h1>Tags</h1>
-<ul>
-    
-        <li><a href="https://wbira.github.io/tags/angular/">angular</a> 1</li>
-    
-        <li><a href="https://wbira.github.io/tags/aws/">aws</a> 2</li>
-    
-        <li><a href="https://wbira.github.io/tags/http/">http</a> 1</li>
-    
-        <li><a href="https://wbira.github.io/tags/lambda/">lambda</a> 1</li>
-    
-        <li><a href="https://wbira.github.io/tags/pooling/">pooling</a> 1</li>
-    
-        <li><a href="https://wbira.github.io/tags/serverless/">serverless</a> 1</li>
-    
-</ul>
 
-<div class="page-footer"></div>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ERROR_MSG</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Could not fetch data. Please try again later&#34;</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">maxAttempts</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">checkAttempts</span>(<span style="color:#a6e22e">maxAttempts</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">number</span>) {
+  <span style="color:#66d9ef">return</span> (<span style="color:#a6e22e">attempts</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">number</span>) =&gt; {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">attempts</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">maxAttempts</span>) {
+      <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#34;Error: max attempts&#34;</span>);
+    }
+  };
+}
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">httpPoll</span>(
+  <span style="color:#a6e22e">httpFetcher</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">number</span>) =&gt; <span style="color:#a6e22e">Observable</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">string</span><span style="color:#f92672">&gt;</span>,
+  <span style="color:#a6e22e">predicate</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">string</span>) =&gt; <span style="color:#66d9ef">boolean</span>)<span style="color:#f92672">:</span> <span style="color:#a6e22e">Observable</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">string</span><span style="color:#f92672">&gt;</span> {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">timer</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1000</span>).<span style="color:#a6e22e">pipe</span>(
+      <span style="color:#a6e22e">scan</span>((<span style="color:#a6e22e">acc</span>) =&gt; <span style="color:#f92672">++</span><span style="color:#a6e22e">acc</span>, <span style="color:#ae81ff">0</span>),
+      <span style="color:#a6e22e">tap</span>(<span style="color:#a6e22e">checkAttempts</span>(<span style="color:#a6e22e">maxAttempts</span>)),
+      <span style="color:#a6e22e">mergeMap</span>((<span style="color:#a6e22e">attempt</span>) =&gt; <span style="color:#a6e22e">httpFetcher</span>(<span style="color:#a6e22e">attempt</span>)),
+      <span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">status</span> =&gt; <span style="color:#a6e22e">predicate</span>(<span style="color:#a6e22e">status</span>)),
+      <span style="color:#a6e22e">take</span>(<span style="color:#ae81ff">1</span>),
+      <span style="color:#a6e22e">catchError</span>((<span style="color:#a6e22e">err</span>) =&gt; <span style="color:#66d9ef">of</span>(<span style="color:#a6e22e">ERROR_MSG</span>))
+    )
+}
+
+</code></pre></div><p>Additionaly for this blog post, I created <a href="https://stackblitz.com/edit/angular-ez6ygg?embed=1&amp;file=src/app/polling.ts">example on stackblitz</a>, so you could check how it works.</p>
+
+        </p>
+    </div>
+    
+
+    <div class="page-footer">
+        <hr class="footer-divider">
+        
+        
+            <a class="tag" href="/tags/angular">#angular</a>
+        
+            <a class="tag" href="/tags/http">#http</a>
+        
+            <a class="tag" href="/tags/pooling">#pooling</a>
+        
+      
+    </div>
+
 
         
 
