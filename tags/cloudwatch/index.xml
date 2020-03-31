@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>serverless on Vi Valdi</title>
-    <link>https://wbira.github.io/tags/serverless/</link>
-    <description>Recent content in serverless on Vi Valdi</description>
+    <title>cloudwatch on Vi Valdi</title>
+    <link>https://wbira.github.io/tags/cloudwatch/</link>
+    <description>Recent content in cloudwatch on Vi Valdi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://wbira.github.io/tags/serverless/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wbira.github.io/tags/cloudwatch/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       <guid>https://wbira.github.io/posts/cloudwatch-dashboard/</guid>
       <description>&lt;p&gt;Nowadays, to create a successful project we need a bit more than developed application. We should have CI/CD solution to deliver changes to upper environments. To prove that system still works, we can run set of e2e tests, but there&amp;rsquo;s one more thing, that we should set up in our system.
 And this missing thing is monitoring, which will help us to keep control over health and performance of an application. It may help keep optimal percentage of resources utilization in a cloud, that will lead to reduced costs.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Lambda provisioned concurrency</title>
-      <link>https://wbira.github.io/posts/lambda-provisioned-concurrency/</link>
-      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://wbira.github.io/posts/lambda-provisioned-concurrency/</guid>
-      <description>What is Provisioned Concurrency for AWS Lambda? AWS Lambda as a main building block of serverless world. Overall serverless computing is great for various use cases, but still has some limitations. One of them could be latency. When lambda hadn&amp;rsquo;t been used for some time an execution environment needs to be created. It can take from 200ms to even 600ms, depending on chosen language. So when latency is critical for your application, additional 600ms might be painful.</description>
     </item>
     
   </channel>

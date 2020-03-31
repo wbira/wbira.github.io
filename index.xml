@@ -6,10 +6,20 @@
     <description>Recent content on Vi Valdi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2020 21:17:49 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wbira.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Monitoring in AWS</title>
+      <link>https://wbira.github.io/posts/cloudwatch-dashboard/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wbira.github.io/posts/cloudwatch-dashboard/</guid>
+      <description>&lt;p&gt;Nowadays, to create a successful project we need a bit more than developed application. We should have CI/CD solution to deliver changes to upper environments. To prove that system still works, we can run set of e2e tests, but there&amp;rsquo;s one more thing, that we should set up in our system.
+And this missing thing is monitoring, which will help us to keep control over health and performance of an application. It may help keep optimal percentage of resources utilization in a cloud, that will lead to reduced costs.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Http Polling</title>

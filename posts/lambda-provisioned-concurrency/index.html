@@ -26,7 +26,7 @@
     
 
     
-    
+    <link type="text/css" rel="stylesheet" href="/css/custom.css">
  
     
     
@@ -160,7 +160,7 @@ ex: Waiter ChangeSetCreateComplete failed: Waiter encountered a terminal failure
 Reason: Transform AWS::Serverless-2016-10-31 failed with: Invalid Serverless Application Specification document.
 Number of errors found: 1. Resource with id <span style="color:#f92672">[</span>HelloWorldFunction<span style="color:#f92672">]</span> is invalid.
 To set ProvisionedConcurrencyConfig AutoPublishALias must be defined on the <span style="color:#66d9ef">function</span>...
-</code></pre></div><p>So as we clearly see we need to include an alias to our function config.  Let&rsquo;s add it:</p>
+</code></pre></div><p>So as we clearly see we need to include an alias to our function config. Let&rsquo;s add it:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">AutoPublishAlias</span>: live
 </code></pre></div><p>So here&rsquo;s our final configuration:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">Resources</span>:
