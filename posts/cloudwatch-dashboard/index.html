@@ -187,15 +187,15 @@ Additionaly we can set up alarms based on metrics. So with dashboards feature we
 <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
 	<span style="color:#a6e22e">lambda</span>.<span style="color:#a6e22e">Start</span>(<span style="color:#a6e22e">handler</span>)
 }
-</code></pre></div><p>Let&rsquo;s create Go binary running command form Makefile</p>
+</code></pre></div><p>Let&rsquo;s create Go binary running command form Makefile.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">make build
-</code></pre></div><p>And then simply deploy our example stack to AWS using SAM</p>
+</code></pre></div><p>And then simply deploy our example stack to AWS using SAM.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sam deploy <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>--template-file ./template.yaml <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>--stack-name cloudwatchDashboard <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>--guided <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>--capabilities CAPABILITY_IAM
-</code></pre></div><p>So let&rsquo;s create empty dashboard in AWS console</p>
+</code></pre></div><p>So let&rsquo;s create empty dashboard in AWS console.</p>
 <p><img src="/posts/monitoring/emptyDashboard.png" alt="empty dashboard"></p>
 <p>Now it&rsquo;s time to add some widgets to dashboard. We can press Add widget button on dashboard screen, or&hellip;
 We can go to monitoring tab of our lambda, pick interesting widgets and then add it to our dashboard by clicking on widgets action&rsquo;s button in top right corner of a widget. Or you could even add all widgets at once <strong>Add to Dashboard</strong> button!</p>
