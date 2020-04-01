@@ -219,7 +219,7 @@ So, let&rsquo;s add to our SAM template following resource:</p>
 <p><img src="/posts/monitoring/viewsource.png" alt="final dashboard"></p>
 <p>And then simple copy json body of dashboard definition to DashboardBody property</p>
 <p><img src="/posts/monitoring/dashboardJson.png" alt="final dashboard"></p>
-<p>I think that you should also replace hardcoded function names with using <strong>!Sub</strong> function with lambda resource in all hardoced places.
+<p>I think that you should also replace hardcoded function names using <strong>!Sub</strong> function with lambda resource in all hardoced places.
 Here&rsquo;s it&rsquo;s final dashboard resource definition:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">  <span style="color:#66d9ef">MetricsDashboard</span>:
     <span style="color:#66d9ef">Type</span>: AWS::CloudWatch::Dashboard
