@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>generators on Vi Valdi</title>
+    <link>https://wbira.github.io/tags/generators/</link>
+    <description>Recent content in generators on Vi Valdi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wbira.github.io/tags/generators/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go generator pattern</title>
+      <link>https://wbira.github.io/posts/go-generators/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wbira.github.io/posts/go-generators/</guid>
+      <description>&lt;p&gt;In this post I would like to present generator pattern in Go.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
