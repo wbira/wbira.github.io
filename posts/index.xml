@@ -57,5 +57,14 @@ And this missing thing is monitoring, which will help us to keep control over he
       <description>Here is my new super blog. I will try to share my IT knowladge here.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://wbira.github.io/posts/fargate-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wbira.github.io/posts/fargate-basics/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
